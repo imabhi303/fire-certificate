@@ -1,56 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Certificate Verification</title>
+  <title>भारत सरकार प्रमाण पत्र</title>
   <style>
     body {
       margin: 0;
       background-color: black;
-      font-family: 'Courier New', monospace;
-      color: white;
+      font-family: 'Georgia', serif;
     }
+
     .container {
       padding: 20px;
-      max-width: 100%;
     }
-    .details {
-      background: #111;
+
+    .gov-heading {
+      background-color: #f5f5f5;
+      color: black;
+      text-align: center;
       padding: 15px;
-      border-bottom: 1px solid #444;
-      font-size: 16px;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto 30px auto;
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 2px solid #444;
     }
-    .details h2 {
-      margin-bottom: 10px;
+
+    .details-box {
+      background-color: #f5f5f5;
+      border: 2px solid #ccc;
+      padding: 20px;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .details-box h2 {
+      text-align: center;
+      color: #000;
+      margin-bottom: 20px;
       font-size: 20px;
-      color: #ffd700;
+      border-bottom: 1px solid #999;
+      padding-bottom: 10px;
     }
-    .details p {
-      margin: 5px 0;
+
+    .details-box p {
+      font-size: 16px;
+      margin: 10px 0;
+      line-height: 1.6;
+      font-weight: bold;
     }
+
+    .details-box p span.name {
+      color: red;
+    }
+    .details-box p span.father {
+      color: green;
+    }
+    .details-box p span.reg {
+      color: blue;
+    }
+    .details-box p span.enroll {
+      color: purple;
+    }
+    .details-box p span.training {
+      color: darkorange;
+    }
+
     .certificate {
       width: 200%;
       max-width: none;
       display: block;
       margin: 0 auto;
+      background-color: black;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="details">
-      <h2>Certificate Details</h2>
-      <p><strong>Name:</strong> Abhishek Kumar</p>
-      <p><strong>Father’s Name:</strong> Pramod Kumar</p>
-      <p><strong>Registration No:</strong> 001519662011</p>
-      <p><strong>Enrollment No:</strong> 0163214696</p>
-      <p><strong>Authorized Training:</strong><br>Techsafe Academy, Uttar Pradesh Fire Service Training Centre, GEMSTECH Institute Of Fire & Safety</p>
+
+    <div class="gov-heading">
+      भारत सरकार (Government of India)
     </div>
+
+    <div class="details-box">
+      <h2>Certificate Details</h2>
+      <p>नाम (Name): <span class="name">Abhishek Kumar</span></p>
+      <p>पिता का नाम (Father’s Name): <span class="father">Pramod Kumar</span></p>
+      <p>पंजीकरण संख्या (Registration No): <span class="reg">001519662011</span></p>
+      <p>नामांकन संख्या (Enrollment No): <span class="enroll">0163214696</span></p>
+      <p>प्रशिक्षण संस्थान (Authorized Training):<br>
+        <span class="training">
+          Techsafe Academy, Uttar Pradesh Fire Service Training Centre,<br>
+          GEMSTECH International Institute Of Fire & Safety
+        </span>
+      </p>
+    </div>
+
     <img src="Fire diploma.jpg" alt="Fire Diploma Certificate" class="certificate" />
+
   </div>
 </body>
 </html>
