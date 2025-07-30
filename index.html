@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zoomed Certificate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate Verification</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #000;
-      overflow: auto;
+      background-color: black;
+      font-family: 'Courier New', monospace;
+      color: white;
     }
     .container {
-      width: 2500px; /* More width = more zoom */
-      margin: 0 auto;
+      padding: 20px;
+      max-width: 100%;
     }
-    img {
-      width: 100%;
-      height: auto;
+    .details {
+      background: #111;
+      padding: 15px;
+      border-bottom: 1px solid #444;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+    }
+    .details h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #ffd700;
+    }
+    .details p {
+      margin: 5px 0;
+    }
+    .certificate {
+      width: 200%;
+      max-width: none;
       display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="Fire diploma.jpg" alt="Diploma Certificate">
+    <div class="details">
+      <h2>Certificate Details</h2>
+      <p><strong>Name:</strong> Abhishek Kumar</p>
+      <p><strong>Father’s Name:</strong> Pramod Kumar</p>
+      <p><strong>Registration No:</strong> 001519662011</p>
+      <p><strong>Enrollment No:</strong> 0163214696</p>
+      <p><strong>Authorized Training:</strong><br>Techsafe Academy, Uttar Pradesh Fire Service Training Centre, GEMSTECH Institute Of Fire & Safety</p>
+    </div>
+    <img src="Fire diploma.jpg" alt="Fire Diploma Certificate" class="certificate" />
   </div>
 </body>
 </html>
