@@ -1,115 +1,81 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>भारत सरकार डिप्लोमा प्रमाण पत्र</title>
+  <title>Diploma Marksheet</title>
   <style>
     body {
       margin: 0;
-      background-color: black;
-      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
     }
 
-    .container {
-      padding: 20px;
-    }
-
-    .gov-heading {
-      background-color: #f5f5f5;
-      color: black;
+    .header {
       text-align: center;
-      padding: 25px 10px 15px 10px;
-      font-size: 22px;
-      font-weight: bold;
-      border-bottom: 2px solid #444;
+      background-color: #f5f5f5;
+      color: #000;
+      padding: 15px;
     }
 
-    .gov-heading img {
-      height: 90px;
+    .header img {
+      height: 70px;
       margin-bottom: 5px;
     }
 
-    .gov-heading .gov-label {
-      font-size: 24px;
-      font-weight: bold;
+    .header h1 {
+      margin: 5px 0;
+      font-size: 22px;
+      color: rgb(0, 51, 153);
     }
 
-    .details-box {
-      background-color: #f5f5f5;
-      border: 2px solid #ccc;
-      padding: 20px;
-      max-width: 700px;
-      margin: 0 auto 40px auto;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-    }
-
-    .details-box h2 {
-      text-align: center;
-      color: #000;
-      margin-bottom: 20px;
-      font-size: 20px;
-      border-bottom: 1px solid #999;
-      padding-bottom: 10px;
-    }
-
-    .details-box p {
+    .header h2 {
+      margin: 5px 0;
       font-size: 16px;
-      margin: 10px 0;
-      line-height: 1.6;
       font-weight: bold;
+      color: #444;
     }
 
-    .details-box p span.name {
-      color: red;
-    }
-    .details-box p span.father {
-      color: green;
-    }
-    .details-box p span.reg {
-      color: blue;
-    }
-    .details-box p span.enroll {
-      color: purple;
-    }
-    .details-box p span.training {
-      color: darkorange;
-    }
-
-    .certificate {
-      width: 200%;
-      max-width: none;
-      display: block;
+    .info-box {
+      background-color: #f8f8f8;
+      color: #000;
+      padding: 20px;
       margin: 0 auto;
-      background-color: black;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      max-width: 700px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .certificate-image {
+      display: block;
+      margin: 30px auto;
+      max-width: none;
+      width: auto;
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <div class="gov-heading">
-      <img src="india-logo.png.PNG" alt="Satyamev Jayate Logo" />
-      <div class="gov-label">भारत सरकार (Government of India)</div>
-    </div>
-
-    <div class="details-box">
-      <h2>डिप्लोमा प्रमाण पत्र (Diploma Certificate)</h2>
-      <p>नाम (Name): <span class="name">Abhishek Kumar</span></p>
-      <p>पिता का नाम (Father’s Name): <span class="father">Pramod Kumar</span></p>
-      <p>पंजीकरण संख्या (Registration No): <span class="reg">001519662011</span></p>
-      <p>नामांकन संख्या (Enrollment No): <span class="enroll">016321066011</span></p>
-      <p>प्रशिक्षण संस्थान (Authorized Training):<br>
-        <span class="training">
-          Techsafe Academy, Uttar Pradesh Fire Service Training Centre,<br>
-          GEMSTECH International Institute Of Fire & Safety
-        </span>
-      </p>
-    </div>
-
-    <img src="Fire diploma.jpg" alt="Fire Diploma Certificate" class="certificate" />
-
+  <div class="header">
+    <img src="india-logo.png.PNG" alt="Ashoka Logo" />
+    <h1>भारत सरकार / Government of India</h1>
+    <h2>Diploma Marksheet / डिप्लोमा मार्कशीट</h2>
   </div>
+
+  <div class="info-box">
+    <p><strong>Name:</strong> Abhishek Kumar</p>
+    <p><strong>Father's Name:</strong> Pramod Kumar</p>
+    <p><strong>Enrollment Number:</strong> 016321066011</p>
+    <p><strong>Registration Number:</strong> 001519662020</p>
+    <p><strong>Authorized Training Centre:</strong><br>
+      Techsafe Academy, Uttar Pradesh Fire Service Training Centre,<br>
+      and GEMSTECH International Institute Of Fire & Safety Centre</p>
+    <p><strong>Course Code:</strong> 12423030</p>
+  </div>
+
+  <img class="certificate-image" src="Fire diploma.jpg" alt="Diploma Marksheet"/>
+
 </body>
 </html>
