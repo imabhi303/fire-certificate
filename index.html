@@ -2,73 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Diploma Marksheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
       background-color: black;
-      color: #000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
     }
 
-    .container {
-      background-color: #f9f9f9;
-      max-width: 700px;
+    .wrapper {
+      max-width: 850px;
       margin: 0 auto;
-      padding: 20px;
+      background-color: #f5f5f5;
+      color: black;
+      padding: 30px;
     }
 
-    .center {
+    .header {
       text-align: center;
     }
 
-    .logo {
+    .header img {
       width: 80px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      color: rgb(0, 51, 153); /* Deep blue */
-      margin: 0;
-      font-size: 20px;
-    }
-
-    h2 {
-      color: rgb(90, 90, 90);
-      margin: 10px 0 20px;
-    }
-
-    .label {
-      font-weight: bold;
-      color: rgb(0, 0, 128); /* Navy blue */
-    }
-
-    img.certificate {
-      width: 2000px;
       height: auto;
+      margin-bottom: 5px;
+    }
+
+    .satyamev {
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    .gov-heading {
+      font-size: 22px;
+      color: rgb(0, 51, 153); /* Deep RGB blue */
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .sub-heading {
+      font-size: 18px;
+      color: rgb(128, 0, 0); /* RGB maroon */
+      margin-bottom: 20px;
+    }
+
+    .info {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgb(0, 102, 102); /* Greenish-blue RGB */
+    }
+
+    .info strong {
+      color: rgb(0, 0, 128); /* Navy RGB */
+    }
+
+    .certificate img {
       display: block;
-      margin: 20px auto;
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border: 2px solid #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="center">
-      <img src="india-logo.png" class="logo" alt="Ashoka Logo" />
-      <div>सत्यमेव जयते</div>
-      <h1>भारत सरकार / Government of India</h1>
-      <h2>Diploma Marksheet / डिप्लोमा मार्कशीट</h2>
+
+  <div class="wrapper">
+    <div class="header">
+      <img src="india-logo.png" alt="Ashoka Chakra Logo">
+      <div class="satyamev">सत्यमेव जयते</div>
+      <div class="gov-heading">भारत सरकार / Government of India</div>
+      <div class="sub-heading">Diploma Marksheet / डिप्लोमा मार्कशीट</div>
     </div>
 
-    <p><span class="label">Name:</span> Abhishek Kumar</p>
-    <p><span class="label">Father's Name:</span> Pramod Kumar</p>
-    <p><span class="label">Enrollment Number:</span> 016321066011</p>
-    <p><span class="label">Registration Number:</span> 001519662020</p>
-    <p><span class="label">Authorized Training Centre:</span> Techsafe Academy, Uttar Pradesh Fire Service Training Centre, code: 250001</p>
-    <p><span class="label">Course Code:</span> 12423030</p>
+    <div class="info">
+      <p><strong>Name:</strong> Abhishek Kumar</p>
+      <p><strong>Father's Name:</strong> Pramod Kumar</p>
+      <p><strong>Enrollment Number:</strong> 016321066011</p>
+      <p><strong>Registration Number:</strong> 001519662020</p>
+      <p><strong>Authorized Training Centre:</strong> Techsafe Academy, Uttar Pradesh Fire Service Training Centre, code: 250001</p>
+    </div>
+
+    <div class="certificate">
+      <img src="Fire diploma.jpg" alt="Diploma Certificate">
+    </div>
   </div>
 
-  <img src="Fire diploma.jpg" class="certificate" alt="Diploma Certificate" />
 </body>
 </html>
